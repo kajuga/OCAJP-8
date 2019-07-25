@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter;
 
 public class LocalDateFormatter {
     public static void main(String[] args) {
+        String a = "zoro";
         LocalDate date = LocalDate.of(2020, Month.JANUARY, 20);
         LocalTime time = LocalTime.of(11, 12, 34);
         LocalDateTime dateTime = LocalDateTime.of(date, time);
