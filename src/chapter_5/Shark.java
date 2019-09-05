@@ -8,6 +8,8 @@ public class Shark extends Fish {
     public Shark(int age) {
         super(age);
         this.size = 4;
+        super.size = 2;
+//        this.age = age;
 
     }
 
