@@ -11,12 +11,16 @@ public class ArrListToArray {
         list.add("robin");
         Object[] objectArray = list.toArray();
         System.out.println(objectArray.length);
-        String[] stringArray = list.toArray(new String[0]);
+        String[] stringArray = list.toArray(new String[10]);
         System.out.println(stringArray.length);     // 2
-        for (String str : stringArray
-                ) {
-            System.out.println(str);
-        }
+        stringArray[3] = "xxx";
+
+        System.out.println("list size " + list.size());
+        System.out.println("array lenght " + stringArray.length);
+
+
+
     }
+
 
 }
