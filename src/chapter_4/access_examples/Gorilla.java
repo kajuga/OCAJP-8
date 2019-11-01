@@ -2,8 +2,12 @@ package chapter_4.access_examples;
 
 public class Gorilla {
     public static int count;
-    public static void addGorilla() { count++; }
-    public void babyGorilla() { count++; }
+    public static void addGorilla() {
+        count++;
+    }
+    public void babyGorilla() {
+        count++;
+    }
     public void announceBabies() {
         addGorilla();
         babyGorilla();

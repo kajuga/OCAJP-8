@@ -5,4 +5,6 @@ public class GoodDuckling {
         MotherDuck duck = new MotherDuck();
         duck.quack();                         // default access_examples
         System.out.println(duck.noise);          // default access_examples
-    } }
+    }
+    public void moreE(String[] values, int... nums) {}
+}

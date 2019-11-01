@@ -12,10 +12,16 @@ public class TraditionalSearch {
         animals.add(new Animal("turtle", false, true));
 
 //        print(animals, new CheckIfHopper());      // pass class that does check
-        print(animals, z -> z.canHop());
-        print(animals, a -> a.canSwim());
+//        print(animals, z -> z.canHop());
+//        print(animals, a -> a.canSwim());
+        print(animals, a -> !a.canSwim());
+        print(animals, a -> !a.canHop());
+
+
+
     }
-    private static void print(List<Animal> animals, CheckTrait checker) {
+//    private static void print(List<Animal> animals, CheckTrait checker) {
+    private static void print(List<Animal> animals, Predicate<Animal> checker) {
         for (Animal animal : animals) {
             if (checker.test(animal))               // the general check
                 System.out.print(animal + " ");
